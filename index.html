@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+<body onload="tipos()">
+    <h1>Formulário</h1>
+    <form action="">
+        <div>
+            <p><label for="id">ID</label></p>
+            <p><input id="id" type="text" class="form-control mb-3" >
+            <button type="button" id="submit2" class="botao1" onclick="consultar()">Buscar por ID</button>
+            <p><label for="nome">NOME</label></p>
+            <p><input id="nome" type="text" class="form-control mb-3"></p>
+            <p><label for="email">EMAIL</label></p>
+            <p><input id="email" type="text" class="form-control mb-3">
+            <button type="button" id="submit2" class="botao1" onclick="consultar()">Buscar por Email</button>
+            <p><label for="telefone">TELEFONE</label></p>
+            <p><input id="telefone" type="text" class="form-control mb-3"></p>
+            
+            <p>
+                <select name="tipoCliente" id="tipoCliente" class="form-control Master">
+                    <option value="1" id="tipo1"></option>
+                    <option value="2" id="tipo2"></option>
+                    <option value="3" id="tipo3"></option>
+                </select>
+            </p>
+
+            <p><label for="cep">CEP</label></p>
+            <input id="cep" type="text" class="form-control mb-3">
+            <button type="button" id="submit" class="botao" onclick="buscar()">Buscar Endereço</button>
+            
+            
+            <p><label for="logradouro">LOGRADOURO</label></p>
+            <p><input id="logradouro" type="text" class="form-control mb-3"></p>
+            <p><label for="bairro">BAIRRO</label></p>
+            <p><input id="bairro" type="text" class="form-control mb-3"></p>
+            <p><label for="complemento">COMPLEMENTO</label></p>
+            <p><input id="complemento" type="text" class="form-control mb-3"></p>
+            <p><label for="localidade">LOCALIDADE</label></p>
+            <p><input id="localidade" type="text" class="form-control mb-3"></p>
+            <p><label for="numero">NUMERO</label></p>
+            <p><input id="numero" type="text" class="form-control mb-3"></p>
+            <p><label for="uf">ESTADO</label></p>
+            <p><input id="uf" type="text" class="form-control mb-3"></p>
+            <button type="button" id="submit2" class="botao1" onclick="cadastrar()">Enviar</button>
+
+            
+
+        </div>
+    </form>
+
+    <script src="src/main.js"></script>
+    <script src="src/cad.js"></script>
+</body>
+</html>
